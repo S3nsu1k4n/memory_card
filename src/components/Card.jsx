@@ -1,7 +1,7 @@
-const Card = () => {
+const Card = ({img, on_click}) => {
   return (
-    <div className="card">
-
+    <div className="card" onClick={on_click}>
+      <img src={img.url} alt={img.id} />
     </div>
   )
 }
